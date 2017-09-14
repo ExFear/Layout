@@ -1,0 +1,137 @@
+/* Lists
+   ========================================================================== */
+/**
+ * Remove default lists styles, margins and padding.
+ */
+
+ol,
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* Page Style */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font: normal 1.1em/1.5 sans-serif;
+    color: #222;
+    background-color: #e3e5e6;
+    /*
+    width: 90%;
+    margin: auto;
+    */
+}
+/*
+.main-wrapper{
+ width: 90%;
+margin: auto;
+}
+*/
+/* Layout Element Colors */
+.main-header{ background-color: #384047; }
+.main-logo{ background-color: #5fcf80; }
+.main-nav li{ background-color: #68dd94; }
+.primary-content{ background-color: #abfbc9; }
+.secondary-content{ background-color: #bbeccd; }
+.main-footer{ background-color: #ceead8; }
+
+/* Header, Banner, and Footer Layout */
+
+.main-header{
+    padding: 20px;
+    display: table;
+    width: 100%;
+    min-height: 150px;
+}
+.main-logo a,
+.main-nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+}
+.main-logo, 
+.main-nav {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.main-logo,
+.main-nav,
+.main-nav li{
+    display: inline-block;
+}
+.main-logo,
+.main-nav li{
+    border-radius: 5px;
+}
+
+.main-logo{
+    width: 120px;
+}
+.main-nav li {
+    margin-right: 10px;
+}
+.main-nav{
+    padding-left: 50px;
+}
+/* Column Layout */
+.col{
+    display: inline-block;
+    padding: 20px;
+    margin-right: -5px;
+    vertical-align: top;
+}
+html,
+body,
+.main-wrapper,
+.col{
+    height: 100%;
+}
+
+.primary-content{
+    width: 60%;
+}
+.secondary-content{
+    width: 40%;
+}
+.main-footer{
+    text-align: center;
+    padding: 20px;
+}
+.main-banner{
+    background: #ebedee;
+    text-align: center;
+    padding: 35px;
+}
+
+
+/* Media Query */
+@media (max-width: 768px){
+    .main-logo,
+    .main-nav,
+    .main-nav li,
+    .col{
+        display: block;
+        width: initial;
+        height: initial;
+        margin: initial;
+    }
+    .main-nav{
+        padding-left: initial;
+    }
+    .main-nav li{
+        margin-top: 15px;
+    }
+    .main-banner{
+        display:none; }
+}
+
+
+
+
+
